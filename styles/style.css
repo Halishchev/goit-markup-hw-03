@@ -1,0 +1,378 @@
+/* Color */
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --main-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --ternary-background-color: #f5f4fa;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* logo */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  margin-right: 93px;
+}
+
+.logo-two {
+  color: #000000;
+}
+
+.logo-three {
+  color: #ffffff;
+}
+
+/* Head */
+.site-nav .link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts .link {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.site-nav .link:hover,
+.contacts .link:hover {
+  color: var(--accent-color);
+}
+
+.site-nav .link:focus,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.contacts {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child),
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  height: 600px;
+  padding-top: 213px;
+  padding-bottom: 187px;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* button */
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.radio-button {
+  background-color: var(--ternary-background-color);
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.radio-button:hover,
+.radio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+}
+
+/* advantages */
+.advantage-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage {
+  margin-bottom: 0;
+}
+
+.advantages-item {
+  flex-basis: 270px;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* .advantage{} all in body*/
+
+/* section title */
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 50px;
+}
+
+.doings-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doings-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.doings-section {
+  padding-bottom: 94px;
+}
+
+/* team-section */
+.team-section {
+  background-color: var(--ternary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.name-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 14px;
+}
+
+.profesion {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 0;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.team-item {
+  width: 270px;
+  padding-bottom: 30px;
+  border: solid 1px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.photo-team {
+  margin-bottom: 26px;
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary-background-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-contacts .link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.footer-contacts .location {
+  color: var(--main-background-color);
+}
+
+.footer-contacts .link:hover {
+  color: var(--accent-color);
+}
+
+.footer-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio */
+.examples-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  margin-bottom: 4px;
+}
+
+.style-examples {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 0;
+}
+
+.radio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.radio-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.cards-item {
+  flex-basis: calc(100% / 3 -30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.cards-text {
+  padding: 20px 24px;
+}
