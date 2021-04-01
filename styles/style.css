@@ -35,6 +35,7 @@ body {
 
   color: var(--main-text-color);
   background-color: var(--main-background-color);
+  margin: 0;
 }
 
 h1,
@@ -125,6 +126,9 @@ img {
 .head {
   display: flex;
   align-items: center;
+}
+
+.head-section {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -147,6 +151,9 @@ img {
   margin-right: 50px;
 }
 
+.head-portfolio {
+  border-bottom: solid 1px;
+}
 /* Hero */
 
 .hero {
@@ -173,6 +180,10 @@ img {
   margin-bottom: 30px;
 }
 
+.hero-button {
+  padding: 10px 32px;
+}
+
 /* button */
 
 .button {
@@ -195,6 +206,7 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  padding: 6px 22px;
 }
 
 .radio-button:hover,
@@ -290,7 +302,6 @@ img {
 .team-item {
   width: 270px;
   padding-bottom: 30px;
-  border: solid 1px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -305,6 +316,9 @@ img {
   background-color: var(--secondary-background-color);
   padding-bottom: 60px;
   padding-top: 60px;
+}
+.footer-address {
+  margin-top: 20px;
 }
 
 .footer-contacts .link {
@@ -325,6 +339,10 @@ img {
 
 .footer-contacts .link:focus {
   color: var(--accent-color);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* portfolio */
@@ -348,7 +366,7 @@ img {
 .radio-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 64px;
+  margin-bottom: 34px;
 }
 
 .radio-item:not(:last-child) {
@@ -368,9 +386,10 @@ img {
 }
 
 .cards-item {
-  flex-basis: calc(100% / 3 -30px);
+  width: calc(100% / 3 - 34px);
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid;
 }
 
 .cards-text {
